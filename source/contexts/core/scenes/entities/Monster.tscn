@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhkisd1eacp0v"]
+
+[ext_resource type="Script" path="res://contexts/core/scenes/entities/Monster.gd" id="1_0anvu"]
+[ext_resource type="Texture2D" uid="uid://c7xx6fpby2brl" path="res://assets/images/spritesheets/placeholder_monster.png" id="1_hpyeu"]
+
+[node name="Monster" type="Node2D" groups=["Monster"]]
+texture_filter = 1
+script = ExtResource("1_0anvu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_hpyeu")
+centered = false
+hframes = 3
+vframes = 4

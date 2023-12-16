@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://c11ly2rknn5oa"]
+
+[ext_resource type="Texture2D" uid="uid://bqkd508p26384" path="res://assets/images/spritesheets/placeholder_character.png" id="1_cyejf"]
+[ext_resource type="Script" path="res://contexts/core/scenes/entities/Player.gd" id="1_s7tmp"]
+
+[node name="Player" type="Node2D" groups=["Player"]]
+texture_filter = 1
+script = ExtResource("1_s7tmp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_cyejf")
+centered = false
+hframes = 3
+vframes = 4
+
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_left = 0
+limit_top = 0
+limit_right = 1888
+limit_bottom = 1056
